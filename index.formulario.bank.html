@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/i3.png" type="image/png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <title>Forms bank</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('img/Design\ sem\ nome\ \(8\).png') no-repeat center center;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    .background-image::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.818);
+      z-index: -1; 
+    }
+ 
+    .form-container {
+      max-width: 600px;
+      width: 100%;
+      z-index: 2;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.445); 
+      padding: 20px;
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif;
+      border: 1px solid #887e7e38; 
+    }
+
+    .form-container h1 {
+      margin-bottom: 60px;
+      font-size: 24px;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="background-image"></div>
+  <div class="form-container">
+    <h1>Preencha para o nosso time entrar em contato</h1>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "45760153",
+        formId: "bec98298-a6f5-45e3-ad6c-995904d76641"
+      });
+    </script>
+  </div>
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/i3.png" type="image/png">
+    <title>i3 a casa do empreendedor digital</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="img/logo_vetor_colour_i3.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.quemsomos.html">Quem Somos</a></li>
+               <!-- <li><a href="http://i3-blog.local/">blog</a></li>
+                <!-- Adicione outros itens de menu aqui -->
+            </ul>
+        </div>
+        <button class="start-now" onclick="window.location.href='https://i3flix.com.br/auth/sign-in'">Começar Agora</button>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>A casa do</h1>
+            <h2 id="dynamic-text" class="highlight">EMPREENDEDOR</h2>
+            <p class="main-subtitle">Digital</p>
+            <p class="subtitle">O ecossistema <strong>mais completo</strong> para o empreendedor digital <span id="dynamic-subtitle">...Streaming...</span></p>
+            <button class="cta-button-01" onclick="window.location.href='https://i3flix.com.br/auth/sign-in'">Conhecer mais</button>
+
+        </div>
+    </section>
+
+    <div class="services-container">
+        <div class="services-card">
+            <div class="img-container">
+                <img src="img/logo_Flix_Ket.png" alt="i3 Flix">
+            </div>
+            <div class="services-card-body">
+                <p>O i3 Flix é a vitrine onde você pode hospedar o seu curso online, aumentando a percepção de valor sob o seu infoproduto, tornando você referência.</p>
+                <button class="button" onclick="window.location.href='https://i3flix.com.br/auth/sign-in'">Começar Agora</button>
+            </div>
+        </div>
+      
+        <div class="services-card">
+            <div class="img-container">
+              <img src="img/logo_Pay_Ket.png" alt="i3 Pay">
+            </div>
+            <div class="services-card-body">
+              <p>Processamento de pagamentos com antifraude e recuperação de chargebacks, que reduz o cancelamento de compras e aumenta até 50% a taxa de aprovação.</p>
+              <button class="button" id="openPopupBtnPay">Saiba Mais</button>
+            </div>
+          </div>
+          
+          <!-- Popup i3 Pay -->
+          <div id="popupPay" class="overlay" style="display: none;">
+            <div class="popup">
+              <button class="close-popup" onclick="closePopupPay()">×</button>
+              <h1>Preencha para o nosso time entrar em contato</h1>
+              <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+              <script>
+                hbspt.forms.create({
+                  region: "na1",
+                  portalId: "45760153",
+                  formId: "502d5289-1d9d-44b9-a03b-2caa22f7e2d2"
+                });
+              </script>
+            </div>
+          </div>
+          
+          <script>
+            // Função para abrir o popup do i3 Pay
+            function openPopupPay() {
+              document.getElementById('popupPay').style.display = 'flex';
+            }
+          
+            // Função para fechar o popup do i3 Pay
+            function closePopupPay() {
+              document.getElementById('popupPay').style.display = 'none';
+            }
+          
+            // Adiciona o evento de clique ao botão do i3 Pay
+            document.getElementById('openPopupBtnPay').addEventListener('click', openPopupPay);
+          </script>
+          
+          <!-- Segundo Card -->
+          
+          <div class="services-card">
+            <div class="img-container">
+              <img src="img/logo_Bank_Ket.png" alt="i3 Bank">
+            </div>
+            <div class="services-card-body">
+              <p>Conheça o banco integrado. Acompanhe suas vendas em tempo real.</p>
+              <button class="button" id="openPopupBtnBank">Saiba Mais</button>
+            </div>
+          </div>
+          
+          <!-- Popup i3 Bank -->
+          <div id="popupBank" class="overlay" style="display: none;">
+            <div class="popup">
+              <button class="close-popup" onclick="closePopupBank()">×</button>
+              <h1>Preencha para o nosso time entrar em contato</h1>
+              <div class="form-wrapper">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                  hbspt.forms.create({
+                    region: "na1",
+                    portalId: "45760153",
+                    formId: "bec98298-a6f5-45e3-ad6c-995904d76641"
+                  });
+                </script>
+              </div>
+            </div>
+          </div>
+          <script>
+            // Função para abrir o popup do i3 Bank
+            function openPopupBank() {
+              document.getElementById('popupBank').style.display = 'flex';
+            }
+          
+            // Função para fechar o popup do i3 Bank
+            function closePopupBank() {
+              document.getElementById('popupBank').style.display = 'none';
+            }
+          
+            // Adiciona o evento de clique ao botão do i3 Bank
+            document.getElementById('openPopupBtnBank').addEventListener('click', openPopupBank);
+          </script>
+    </div>
+    
+   <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        <div class="slide-content">
+                            <img src="img/logo_Flix_Ket.png" class="logo-large" alt="i3 Flix">
+                            <video src="img/i3flix.mov" controls></video>
+                            <button class="start-button_01" onclick="window.location.href='https://i3flix.com.br/'">Começar Agora </button> 
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                            <img src="img/logo_Bank_Ket.png" class="logo-large" alt="i3 Bank">
+                            <video src="img/bank.mov" controls></video>
+                            <button class="start-button_02"  onclick="window.location.href='index.formulario.bank.html'">Saiba Mais</button> 
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <img src="img/logo_Pay_Ket.png" class="logo-large" alt="i3 Pay">
+                            <video src="img/pay.mov" controls></video>
+                            <button class="start-button_03"  onclick="window.location.href='index.formulario.checkout.html'">Saiba Mais</button> 
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar"></div> 
+    </div>
+    
+    <h1 class="title"><span class="thin">NOSSOS</span> EXPERTS</h1>
+    <div class="parceiros">
+        <div class="slide-parceiros">
+            <div class="slide-track">
+                <!-- Original cards -->
+                <div class="slide-item">
+                  <div class="image-container">
+                      <img src="img/dr.png" alt="Foto de Dr. Washington Canedo">
+                  </div>
+                  <h2>Dr. Washington Canedo</h2>
+                  <p> Especialista da área da Saúde .</p>
+              </div>
+        
+                <!-- Repeat cards for infinite loop effect -->
+                <div class="slide-item">
+                    <img src="img/dr.png"alt="Foto de Dr Washinton Canedo">
+                    <h2>Dr. Washington Canedo</h2>
+                    <p> Especialista da área da Saúde</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/maluquadrada.png"alt="Foto de Malu Financias">
+                    <h2>Malu Finanças</h2>
+                    <p>Prodigio no ensino de finanças para crianças </p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/loremquadrada.png"alt="Foto de Loren Carneiro">
+                    <h2>Loren Carneiro</h2>
+                    <p>Especialista em growt mance de ecossistemas Segure</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/hamilton.png"alt="Foto de hamilton">
+                    <h2>Hamilton Alves</h2>
+                    <p>Primeiro piloto infoprodutor</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/bruna.png"alt="Foto de Bruna Thalita ">
+                    <h2>Bruna Thalita</h2>
+                    <p> Especialista em Marketing e empoderamento feminino</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dalefees.png"alt="Foto de dalefe  ">
+                    <h2>Cleverson Daleffe</h2>
+                    <p>Especialista em vendas</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/roberto.png"Foto de roberto Oliveira ">
+                    <h2>Roberto Oliveira</h2>
+                    <p>Empreendedor digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dr.png"alt="Foto de Dr Washinton Canedo">
+                    <h2>Dr. Washington Canedo</h2>
+                    <p> Especialista da área da Saúde</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/maluquadrada.png"alt="Foto de Malu Financias">
+                    <h2>Malu Finanças</h2>
+                    <p>Prodigio no ensino de finanças para crianças </p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dr.png"alt="Foto de Dr Washinton Canedo">
+                    <h2>Dr. Washington Canedo</h2>
+                    <p> Especialista da área da Saúde</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/maluquadrada.png"alt="Foto de Malu Financias">
+                    <h2>Malu Finanças</h2>
+                    <p>Prodigio no ensino de finanças para crianças </p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/loremquadrada.png"alt="Foto de Loren Carneiro">
+                    <h2>Loren Carneiro</h2>
+                    <p>Especialista em growt mance de ecossistemas Segure</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/hamilton.png"alt="Foto de hamilton">
+                    <h2>Hamilton Alves</h2>
+                    <p>Primeiro piloto infoprodutor</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/bruna.png"alt="Foto de Bruna Thalita ">
+                    <h2>Bruna Thalita</h2>
+                    <p> Especialista em Marketing e empoderamento feminino</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dalefees.png"alt="Foto de dalefe  ">
+                    <h2>Cleverson Daleffe</h2>
+                    <p>Especialista em vendas</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/roberto.png"Foto de roberto Oliveira ">
+                    <h2>Roberto Oliveira</h2>
+                    <p>Empreendedor digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dr.png"alt="Foto de Dr Washinton Canedo">
+                    <h2>Dr. Washington Canedo</h2>
+                    <p> Especialista da área da Saúde</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/maluquadrada.png"alt="Foto de Malu Financias">
+                    <h2>Malu Finanças</h2>
+                    <p>Prodigio no ensino de finanças para crianças </p>
+                </div>
+                <!-- Clone original cards for infinite loop -->
+                <div class="slide-item">
+                    <img src="img/loremquadrada.png"alt="Foto de Loren Carneiro">
+                    <h2>Loren Carneiro</h2>
+                    <p>Especialista em growt mance de ecossistemas Segure</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/hamilton.png"alt="Foto de hamilton">
+                    <h2>Hamilton Alves</h2>
+                    <p>Primeiro piloto infoprodutor</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/bruna.png"alt="Foto de Bruna Thalita ">
+                    <h2>Bruna Thalita</h2>
+                    <p> Especialista em Marketing e empoderamento feminino</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dalefees.png"alt="Foto de dalefe  ">
+                    <h2>Cleverson Daleffe</h2>
+                    <p>Especialista em vendas</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/roberto.png"Foto de roberto Oliveira ">
+                    <h2>Roberto Oliveira</h2>
+                    <p>Empreendedor digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dr.png"alt="Foto de Dr Washinton Canedo">
+                    <h2>Dr. Washington Canedo</h2>
+                    <p> Especialista da área da Saúde</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/maluquadrada.png"alt="Foto de Malu Financias">
+                    <h2>Malu Finanças</h2>
+                    <p>Prodigio no ensino de finanças para crianças </p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dr.png"alt="Foto de Dr Washinton Canedo">
+                    <h2>Dr. Washington Canedo</h2>
+                    <p> Especialista da área da Saúde</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/maluquadrada.png"alt="Foto de Malu Financias">
+                    <h2>Malu Finanças</h2>
+                    <p>Prodigio no ensino de finanças para crianças </p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/loremquadrada.png"alt="Foto de Loren Carneiro">
+                    <h2>Loren Carneiro</h2>
+                    <p>Especialista em growt mance de ecossistemas Segure</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/hamilton.png"alt="Foto de hamilton">
+                    <h2>Hamilton Alves</h2>
+                    <p>Primeiro piloto infoprodutor</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/bruna.png"alt="Foto de Bruna Thalita ">
+                    <h2>Bruna Thalita</h2>
+                    <p> Especialista em Marketing e empoderamento feminino</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dalefees.png"alt="Foto de dalefe  ">
+                    <h2>Cleverson Daleffe</h2>
+                    <p>Especialista em vendas</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/luva.png"alt="Foto de Luva de pedreiro  ">
+                    <h2>Luva de Pedreiro</h2>
+                    <p>Influenciador Digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/roberto.png"Foto de roberto Oliveira ">
+                    <h2>Roberto Oliveira</h2>
+                    <p>Empreendedor digital</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/dr.png"alt="Foto de Dr Washinton Canedo">
+                    <h2>Dr. Washington Canedo</h2>
+                    <p> Especialista da área da Saúde</p>
+                </div>
+                <div class="slide-item">
+                    <img src="img/maluquadrada.png"alt="Foto de Malu Financias">
+                    <h2>Malu Finanças</h2>
+                    <p>Prodigio no ensino de finanças para crianças </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="faq-background">
+        <h1 class="centralizado-h1" ><span class="thin">Perguntas</span> Frequentes</h1>
+        <div class="faqzinha">
+            <div class="faq">
+                <h3 class="question"><span class="number">01</span> Quanto custa usar o i3?</h3>
+                <svg class="arrow arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+                <div class="content">
+                    <p>Para vender no i3, você paga 6,9% + 1 real de comissão quando uma venda é realizada.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="question"><span class="number">02</span> Quantos produtos posso vender pelo i3?</h3>
+                <svg class="arrow arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+                <div class="content">
+                    <p>Você pode criar e vender quantos produtos digitais quiser!</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="question"><span class="number">03</span>Como o i3 pode me ajudar a crescer?</h3>
+                <svg class="arrow arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+                <div class="content">
+                    <p>O i3 tem um time de especialistas pronto para ajudar você a alavancar a sua jornada e atingir seus objetivos.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="question"><span class="number">04</span> O que faz do i3 a melhor plataforma para criadores de conteúdo?</h3>
+                <svg class="arrow arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+                <div class="content">
+                    <p>Somos a casa do empreendedor digital, a única 3 em 1, trazendo todas as soluções para que você tenha o melhor resultado através do seu infoproduto.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="question"><span class="number">05</span> Posso gravar meu podcast/cursos no i3?</h3>
+                <svg class="arrow arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+                <div class="content">
+                    <p>Temos planos premium para você que deseja gravar seu conteúdo no nosso estúdio/podcast.</p>
+                </div>
+            </div>
+          <!---  <div class="faq">
+                <h3 class="question"><span class="number">06</span> O que faz da i3 a melhor plataforma para criadores de conteúdo?</h3>
+                <svg class="arrow arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </div>
+            </div>
+            <div class="faq">
+                <h3 class="question"><span class="number">07</span> Posso gravar meu podcast/cursos no i3?</h3>
+                <svg class="arrow arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M7 10l5 5 5-5H7z"/>
+                </svg
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                </div>
+            </div>--->
+                <button class="button-faq"  onclick="window.location.href='index.formulario.checkout.html'" >saber mais</button>
+            </div> 
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/oficiali3?igsh=ZDJjZDNzd3M4Znlv" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@i3oficial?_t=8oVgjeMT1ss&_r=1" target="_blank">
+                      <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://x.com/oficiali3br?s=21" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/i3-banco/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>                  
+            <div class="logi">
+                <a href="index.html">
+                  <img src="img/logo_vetor_white.png" alt="Logo">
+                </a>
+              </div>    
+          </div>
+          <div class="footer-column">
+            <h3>Links úteis</h3>
+            <ul>
+              <li><a href="" target="_blank">Termos de uso</a></li>
+              <li><a href="" target="_blank">Suporte</a></li>
+              <li><a href="" target="_blank">Política de privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Minha conta</h3>
+            <ul>
+              <li><a href="https://i3flix.com.br/auth/sign-in" target="_blank">Realizar login</a></li>
+              <li><a href="https://i3flix.com.br/auth/sign-up" target="_blank">Criar conta</a></li>
+              <li><a href="https://i3flix.com.br/auth/sign-in" target="_blank">Indicação / afiliado</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Redes sociais</h3>
+            <ul>
+              <li><a href="https://www.instagram.com/oficiali3?igsh=ZDJjZDNzd3M4Znlv" target="_blank">Instagram</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61553116837087&locale=pt_BR" target="_blank">Facebook</a></li>
+              <li><a href="https://x.com/oficiali3br?s=21" target="_blank">Twitter</a></li>
+              <li><a href="https://www.youtube.com/@i3Bank" target="_blank">Youtube</a></li>
+              <li><a href="https://www.tiktok.com/@i3oficial?_t=8oVgjeMT1ss&_r=1" target="_blank">Tiktok</a></li>
+              <li><a href="https://www.linkedin.com/company/i3-banco/" target="_blank">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>FAQ</h3>
+            <ul>
+              <li><a href="" target="_blank">Termos de abertura</a></li>
+              <li><a href="" target="_blank">Termos de conta</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>i3 - 2021-2024 © Todos os direitos reservados.</p>
+        </div>
+      </footer>
+      
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+header#masthead.site-header,
+#bloghash-header,
+.bloghash-container.bloghash-header-container {
+    background-color: #000 !important;
+}
+
+
+.bloghash-article {
+    background-color: #0000007e!important; 
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.877);
+}
+
+.bloghash-btn {
+    background-color: #ffdd00 !important; 
+    color:#000
+}
+
+.bloghash-btn span {
+    color: #cccccc !important; 
+}
+
+/* Mudar a cor da fonte do título e do subtítulo das postagens para branca */
+.bloghash-article .entry-title,
+.bloghash-article .entry-summary {
+    color: #ffffff !important; /* Cor branca para o texto */
+}
+
+/* Mudar a cor da fonte do título da postagem quando o mouse passa sobre ele */
+.bloghash-article .entry-title a:hover {
+    color: #000000 !important; 
+}
+
+.bloghash-btn.btn-text-1 a {
+    color:#ff0000  important; 
+}
+
+.bloghash-btn.btn-text-1 a:hover {
+    color:#ff0000   !important; 
+}
+
+
+.bloghash-btn.btn-text-1 {
+  color: #ffffff !important; 
+}
+
+.bloghash-btn.btn-text-1:hover {
+  color: #ffff00 !important; 
+}
+
+#block-2.bloghash-sidebar-widget.bloghash-widget {
+  background-color: #000000; 
+  color: #ffffff;
+}
+
+#block-2.bloghash-sidebar-widget.bloghash-widget {
+    background-color: #000000 !important; 
+    color: #ffffff; 
+    padding: 20px;
+}
+
+#block-2.bloghash-sidebar-widget.bloghash-widget * {
+    color: #ffffff !important; 
+}
+
+#block-2.bloghash-sidebar-widget.bloghash-widget .wp-block-search__input {
+    background-color: #333333; 
+    color: #ffffff;
+}
+
+
+#block-2.bloghash-sidebar-widget.bloghash-widget .wp-block-search__button {
+    background-color: #000000; 
+    color: #969696 !important; 
+}
+
+
+#block-2.bloghash-sidebar-widget.bloghash-widget .wp-block-search__button:hover {
+    background-color: #ffd900;
+    color: #000000 !important;
+   }
+
+#block-3.bloghash-sidebar-widget.bloghash-widget {
+    background-color: #000000 !important;
+    color: #ffffff !important; 
+    padding: 20px; 
+}
+
+
+#block-3.bloghash-sidebar-widget.bloghash-widget * {
+    color: #ffffff !important; 
+}
+
+
+#block-3.bloghash-sidebar-widget.bloghash-widget .wp-block-heading {
+    color: #ffffff !important; 
+}
+
+
+#block-3.bloghash-sidebar-widget.bloghash-widget .wp-block-latest-posts__post-title {
+    color: #ffffff !important; 
+}
+
+
+#block-3.bloghash-sidebar-widget.bloghash-widget .wp-block-latest-posts__post-title:hover {
+    color: #ffff00 !important; 
+}
+
+#block-6.bloghash-sidebar-widget.bloghash-widget {
+    background-color: #000000 !important; 
+    color: #ffffff !important; 
+    padding: 20px;
+}
+
+#block-6.bloghash-sidebar-widget.bloghash-widget * {
+    color: #ffffff !important; 
+}
+
+#block-6.bloghash-sidebar-widget.bloghash-widget .wp-block-heading {
+    color: #ffffff !important; 
+}
+
+#block-6.bloghash-sidebar-widget.bloghash-widget .wp-block-categories-list li a {
+    color: #ffffff !important; 
+}
+
+
+#block-6.bloghash-sidebar-widget.bloghash-widget .wp-block-categories-list li a:hover {
+    color: #ffff00 !important;
+}
+
+#block-5.bloghash-sidebar-widget.bloghash-widget {
+    background-color: #000000 !important; 
+    color: #ffffff !important; 
+    padding: 20px;
+}
+
+
+#block-5.bloghash-sidebar-widget.bloghash-widget * {
+    color: #ffffff !important; 
+}
+
+
+#block-5.bloghash-sidebar-widget.bloghash-widget .wp-block-heading {
+    color: #ffffff !important; 
+}
+
+
+#block-5.bloghash-sidebar-widget.bloghash-widget .wp-block-archives-list li a {
+    color: #000000 !important; 
+}
+
+
+#block-5.bloghash-sidebar-widget.bloghash-widget .wp-block-archives-list li a:hover {
+    color: #ffff00 !important; 
+}
+
+.btn-small span {
+    color: #000 !important; /* Define o texto do botão como branco */
+}
+
+.btn-small span:hover {
+    color: #000000 !important; /* Define o texto do botão como amarelo ao passar o mouse */
+}
+
+#comments {
+    background-color: #000000; /* cor de fundo preto */
+    color: #ffffff; /* cor do texto branco */
+    padding: 20px; /* adiciona espaço interno ao contêiner */
+    border-radius: 5px; /* bordas arredondadas para um visual mais suave */
+}
+
+/* Estiliza o título dos comentários */
+#comments .comments-title {
+    color: #ffffff; /* cor do texto branco */
+}
+
+/* Estiliza o autor do comentário e o conteúdo */
+#comments .comment-author-meta,
+#comments .comment-content,
+#comments .comment-meta a {
+    color: #ffffff; /* cor do texto branco */
+}
+
+/* Estiliza os links de resposta, edição, e outros */
+#comments a.comment-reply-link,
+#comments a.comment-edit-link,
+#comments a.comment-date,
+#comments .comment-meta time {
+    color: #ffffff; /* cor do texto branco */
+}
+
+/* Estiliza o formulário de resposta */
+#respond {
+    background-color: #000000; /* cor de fundo preto */
+    color: #ffffff; /* cor do texto branco */
+    padding: 20px; /* adiciona espaço interno ao contêiner */
+    border-radius: 5px; /* bordas arredondadas */
+}
+
+/* Estiliza o título do formulário de resposta */
+#respond h3.comment-reply-title {
+    color: #ffffff; /* cor do texto branco */
+}
+
+/* Estiliza o texto dentro do textarea do formulário */
+#respond textarea {
+    background-color: #000000; /* cor de fundo escuro para o textarea */
+    color: #ffffff; /* cor do texto branco */
+    border: 1px solid #ffffff; /* borda branca */
+}
+
+/* Estiliza o botão de submissão do formulário */
+#respond input[type="submit"] {
+    background-color: #000000; /* cor de fundo branco */
+    color: #ffffff; /* cor do texto preto */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Muda a cor do botão ao passar o mouse */
+#respond input[type="submit"]:hover {
+    background-color: #ffcc00; /* cor de fundo amarelo ao passar o mouse */
+    color: #000000; /* cor do texto preto */
+}
+
+.comments-area {
+    background-color: #000000 !important; /* cor de fundo preto */
+	color: #ffffff !important; }
+
+.ticker-slider-box {
+    background-color: #000000; /* cor de fundo preto */
+}
+
+/* Para o título "Últimas notícias" em preto */
+#ticker .widget-title {
+    color: #000000; /* Preto */
+}
+
+/* Para o texto das notícias em branco */
+#ticker .ticker-slider-box a,
+#ticker .ticker-slider-box .posted-on {
+    color: #ffffff; /* Branco */
+}
+
+.widget-title {
+    color: #000000 !important; /* Preto */
+}
+
+.bloghash-search svg {
+    fill: #000000  !important; /* Preto */
+}
+
+/* Muda a cor das fontes azuis escuras para branco */
+h6 a,
+.entry-meta-elements span,
+.ticker-slider-controls button,
+.bloghash-header-widget__search .bloghash-icon,
+.bloghash-input-search,
+.bloghash-animate-arrow .arrow-handle,
+.bloghash-animate-arrow .arrow-bar,
+.bloghash-search-close path {
+    color: #ffffff; /* Branco */
+    fill: #ffffff; /* Branco */
+}
+
+/* Alterar textos e ícones de azul para branco no header */
+header .bloghash-header-widget a,
+header .bloghash-header-widget .bloghash-icon {
+    color: #000000; /* Cor branca para textos e ícones */
+}
+
+/* Alterar a cor da lupa para preto no header */
+header .bloghash-header-widget__search .bloghash-search .bloghash-icon {
+    color: #000000; /* Cor preta para a lupa */
+}
+
+/* Alterar cor do botão de pesquisa ao passar o mouse */
+header .bloghash-header-widget__search .bloghash-animate-arrow:hover {
+    background-color: #FFD700; /* Cor de fundo amarela ao passar o mouse */
+    color: #000000; /* Cor da fonte preta ao passar o mouse */
+}
+
+/* Alterar o fundo do sidebar para preto */
+.sidebar, .widget, .default-sidebar, .widget-area, #secondary {
+    background-color: #000 !important;
+	color: #ffffff !important;
+}
+
+/* Garantir que a fonte no sidebar seja branca */
+.sidebar, .widget, .default-sidebar, .widget-area, #secondary {
+    color: #fff !important;
+}
+
+/* Manter a cor branca mesmo ao passar o mouse */
+.sidebar a, .widget a, .default-sidebar a, .widget-area a, #secondary a {
+    color: #fff !important;
+}
+
+/* Se precisar de um estilo diferente ao passar o mouse */
+.sidebar a:hover, .widget a:hover, .default-sidebar a:hover, .widget-area a:hover, #secondary a:hover {
+    color: #ff0 !important; /* Exemplo de cor amarela ao passar o mouse */
+}
+
+/* Garantir que a fonte e os títulos no sidebar sejam brancos */
+.sidebar, .widget, .default-sidebar, .widget-area, #secondary,
+.sidebar h1, .sidebar h2, .sidebar h3, .sidebar h4, .sidebar h5, .sidebar h6,
+.widget h1, .widget h2, .widget h3, .widget h4, .widget h5, .widget h6,
+.default-sidebar h1, .default-sidebar h2, .default-sidebar h3, .default-sidebar h4, .default-sidebar h5, .default-sidebar h6,
+.widget-area h1, .widget-area h2, .widget-area h3, .widget-area h4, .widget-area h5, .widget-area h6,
+#secondary h1, #secondary h2, #secondary h3, #secondary h4, #secondary h5, #secondary h6 {
+    color: #fff !important;
+}
+
+/* Manter a cor branca nos links, inclusive nos títulos ao passar o mouse */
+.sidebar a, .widget a, .default-sidebar a, .widget-area a, #secondary a,
+.sidebar h1 a, .sidebar h2 a, .sidebar h3 a, .sidebar h4 a, .sidebar h5 a, .sidebar h6 a,
+.widget h1 a, .widget h2 a, .widget h3 a, .widget h4 a, .widget h5 a, .widget h6 a,
+.default-sidebar h1 a, .default-sidebar h2 a, .default-sidebar h3 a, .default-sidebar h4 a, .default-sidebar h5 a, .default-sidebar h6 a,
+.widget-area h1 a, .widget-area h2 a, .widget-area h3 a, .widget-area h4 a, .widget-area h5 a, .widget-area h6 a,
+#secondary h1 a, #secondary h2 a, #secondary h3 a, #secondary h4 a, #secondary h5 a, #secondary h6 a {
+    color: #fff !important;
+}
+
+/* Estilo para o botão "Search" */
+.wp-block-search__button {
+    background-color: #000; /* Cor de fundo preta */
+    color: #fff !important; /* Cor da fonte branca */
+}
+
+/* Mudar para amarelo com texto preto ao passar o mouse */
+.wp-block-search__button:hover {
+    background-color: #ff0; /* Cor de fundo amarela */
+    color: #000 !important;
+		border-radius: 30px !important;/* Cor da fonte preta */
+}
+
+/* Exemplo de estilo diferente ao passar o mouse (cor amarela) nos links */
+.sidebar a:hover, .widget a:hover, .default-sidebar a:hover, .widget-area a:hover, #secondary a:hover,
+.sidebar h1 a:hover, .sidebar h2 a:hover, .sidebar h3 a:hover, .sidebar h4 a:hover, .sidebar h5 a:hover, .sidebar h6 a:hover,
+.widget h1 a:hover, .widget h2 a:hover, .widget h3 a:hover, .widget h4 a:hover, .widget h5 a:hover, .widget h6 a:hover,
+.default-sidebar h1 a:hover, .default-sidebar h2 a:hover, .default-sidebar h3 a:hover, .default-sidebar h4 a:hover, .default-sidebar h5 a:hover, .default-sidebar h6 a:hover,
+.widget-area h1 a:hover, .widget-area h2 a:hover, .widget-area h3 a:hover, .widget-area h4 a:hover, .widget-area h5 a:hover, .widget-area h6 a:hover,
+#secondary h1 a:hover, #secondary h2 a:hover, #secondary h3 a:hover, #secondary h4 a:hover, #secondary h5 a:hover, #secondary h6 a:hover {
+    color: #ff0 !important; /* Cor amarela ao passar o mouse */
+	border-radius: 30px !important;
+}
+
+
